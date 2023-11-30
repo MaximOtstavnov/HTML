@@ -8,7 +8,9 @@
 <body>
     <fieldset>
         <label for="name">Личные данные</label><br>
-        <input type="text" id="name" name="name" pattern="[0-9]{6,10}">
+        <input type="text" id="name" name="name" pattern="[0-9]{6,10}" placeholder="Фамилия" required autofocus>(text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле) <br>
+        <input type="text" id="name" name="name" pattern="[0-9]{6,10}" placeholder="Имя" required>(text: Только кириллица, без пробелов, длина поля 20, обязательное поле) <br>
+        <input type="text" id="name" name="name" pattern="[0-9]{6,10}" placeholder="Отчество" required>(text: Только кириллица, без пробелов, длина поля 24, обязательное поле)
     </fieldset>
 </body>
 </html>
