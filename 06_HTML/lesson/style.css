@@ -1,0 +1,7 @@
+
+p{color: red;}
+p b {color: blue;}
+.bigtext{font-size: large;}
+.attention{color: #FF0000; font-style: italic;}
+#menu li a{text-shadow: 1px; color: gray;}
+#menu li{text-shadow: 1px; color: blueviolet;}
