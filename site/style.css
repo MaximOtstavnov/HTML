@@ -11,3 +11,9 @@ ul{padding-left: 5px; position: relative;}
 ul ul{padding-left: 30px;}
 ul ul ul{padding-left: 30px;}
 a:hover{color: green;}
+#garland {position:absolute;top:0;left:0;background-image:url('https://lenger.kz/uploads/web/christmas-lights.png');height:36px;width:100%;overflow:hidden;z-index:99}
+#nums_1 {padding:100px}
+.garland_1 {background-position: 0 0}
+.garland_2 {background-position: 0 -36px}
+.garland_3 {background-position: 0 -72px}
+.garland_4 {background-position: 0 -108px}
