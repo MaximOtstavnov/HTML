@@ -1,19 +1,97 @@
-
-.body{min-height: 1000px;}
+body{min-height: 1000px; min-width: 1000px;margin: 0;}
 .header{display: flex;justify-content: center; height: 5%;}
 .container{display: flex;}
 .menu{float: left; width: 15%; height: 700px; overflow: auto; min-width: fit-content;}
-.sidebar{width: 15%; height: 700px;float: right;position: absolute; right: 8px; min-width:150px; border: 3px solid black;}
-.footer{width: 100%;height: 50px; background-color: rgb(44, 134, 173);}
+.sidebar{width: 15%; height: 700px;float: right;position: absolute; right: 0px; min-width:150px; border: 3px solid black;}
+.footer{width: 100%;height: 70px; background-color: rgb(44, 134, 173);bottom: 0px;}
 iframe{width:100%; height: 100%;}
 a{transition: color 0.5s; color: blue;}
 ul{padding-left: 5px; position: relative;}
 ul ul{padding-left: 30px;}
 ul ul ul{padding-left: 30px;}
 a:hover{color: green;}
-#garland {position:absolute;top:0;left:0;background-image:url('https://lenger.kz/uploads/web/christmas-lights.png');height:36px;width:100%;overflow:hidden;z-index:99}
+/*#garland {position:absolute;top:0;left:0;background-image:url('https://lenger.kz/uploads/web/christmas-lights.png');height:36px;width:100%;overflow:hidden;z-index:99}
 #nums_1 {padding:100px}
 .garland_1 {background-position: 0 0}
 .garland_2 {background-position: 0 -36px}
 .garland_3 {background-position: 0 -72px}
-.garland_4 {background-position: 0 -108px}
+.garland_4 {background-position: 0 -108px}*/
+.garland{
+    --red: #ff2c2c;
+    --yellow: #ffeb00;
+    --green: #00ff5d;
+    --blue: #0095ff;
+    --speed: 1.5s;
+}
+.red{
+    fill: var(--red);
+    animation: var(--speed) alternate 0s infinite blinkred;
+}
+.yellow{
+    fill: var(--yellow);
+    animation: var(--speed) alternate 0s infinite blinkyellow;
+}
+.green{
+    fill: var(--green);
+    animation: var(--speed) alternate 0s infinite blinkgreen;
+}
+.blue{
+    fill: var(--blue);
+    animation: var(--speed) alternate 0s infinite blinkblue;
+}
+@keyframes blinkred{
+    0%{
+        fill: var(--red);
+    }
+    25%{
+        fill: var(--yellow);
+    }
+    50%{
+        fill: var(--blue)
+    }
+    75%{
+        fill: var(--green)
+    }
+}
+@keyframes blinkyellow{
+    0%{
+        fill: var(--yellow);
+    }
+    25%{
+        fill: var(--blue);
+    }
+    50%{
+        fill: var(--green)
+    }
+    75%{
+        fill: var(--red)
+    }
+}
+@keyframes blinkblue{
+    0%{
+        fill: var(--blue);
+    }
+    25%{
+        fill: var(--green);
+    }
+    50%{
+        fill: var(--red)
+    }
+    75%{
+        fill: var(--yellow)
+    }
+}
+@keyframes blinkgreen{
+    0%{
+        fill: var(--green);
+    }
+    25%{
+        fill: var(--red);
+    }
+    50%{
+        fill: var(--yellow)
+    }
+    75%{
+        fill: var(--blue)
+    }
+}
